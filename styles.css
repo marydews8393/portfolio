@@ -1,0 +1,359 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: #517B9B;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav .name {
+  display: none;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: #581845;
+}
+.nav-names {
+  color: white;
+}
+
+.index-header {
+  text-align: center;
+  background: url('header-snow.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+.index-header {
+  line-height: 1.5;
+}
+.index-header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+.index-header .profile-image:hover {
+  transform: scale(2) rotate(360deg);
+}
+.tag {
+  background-color: #581845;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: table;
+  margin: 10px auto;
+}
+.location {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  color: #581845;
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #505266;
+  border-radius: 6px;
+}
+.card:hover {
+  border-color: #505266;
+}
+.cardtitle {
+  border: solid #1A5672 3px;
+  padding: 8px;
+  text-align: center;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #581845;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #355A57;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 8px;
+  color: blue;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 10;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for Resume html*/
+
+.resume-image {
+  border: solid 4px black;
+  max-width:100%;
+  height:auto;
+}
+.resume-title {
+  color: #581845;
+  font-size: 70px;
+  max-width: auto;
+  font-family: 'Satisfy', cursive;
+}
+.thumbnail:hover {
+  transform: scale(1.5);
+}
+
+.qualifications {
+  color: black;
+  background-color: #B3BFBE;
+  text-align: left;
+  border: solid black 3px;
+  margin: 30px;
+  padding: 20px;
+  display: inline-block;
+}
+.section-title {
+  text-transform: uppercase;
+  font-family: 'Neucha', cursive;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.sum-of-qual {
+  list-style-type: square;
+  font-size: 20px;
+}
+.education {
+  color: black;
+  text-align: left;
+  background-color: #B3BFBE;
+  border: solid black 3px;
+  margin: 30px;
+  padding: 20px;
+  display: inline-block;
+  font-size: 18px;
+}
+.education-title {
+  font-weight: bold;
+  list-style-type: none;
+  font-size: 22px;
+}
+.list-education {
+  list-style-type: none;
+}
+.employment-title {
+  ext-transform: uppercase;
+  font-family: 'Neucha', cursive;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+.resume {
+  color: black;
+  text-align: left;
+  border: solid black 3px;
+  margin: 30px;
+  padding: 20px;
+}
+.resume-dates {
+  color: #900C3F;
+  font-size: 18px;
+}
+
+.resume:hover {
+  background-color: #C6A788;
+}
+
+/*Styles for Projects html*/
+.project-title {
+  color: black;
+  font-size: 50px;
+  font-family: 'Oswald', sans-serif;
+}
+.project-header {
+  position: static;
+  padding: 100px 10px 10px 10px;
+  color: #581845;
+  font-size: 50px;
+}
+
+/*Styles for Contact html*/
+.contact-title {
+  margin-top: 100px;
+  position: static;
+  padding: 100px 10px 10px 10px;
+  color: #581845;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+.contact-title h1 {
+  font-size: 32px;
+  line-height: 10px;
+}
+.contact-title h2 {
+  font-size: 16px;
+}
+.form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+.form-control {
+  width: 600px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  color: #581845;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+input {
+  height: 45px;
+}
+
+form .submit {
+  color: White;
+  background-color: #581845;
+  border-color: #581845;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+form .submit:hover{
+  background-color: blue;
+}
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 450px;
+  }
+
+  .nav {
+    max-width: 1200px;
+  }
+
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+
+}
