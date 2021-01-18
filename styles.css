@@ -232,7 +232,7 @@ a.social:hover {
   list-style-type: none;
 }
 .employment-title {
-  ext-transform: uppercase;
+  text-transform: uppercase;
   font-family: 'Neucha', cursive;
   font-weight: bolder;
   text-align: center;
